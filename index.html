@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nidhi's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      background-color: #000021;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background-color: #12123e;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .left {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #9c97f1;
+    }
+    .section {
+      padding: 60px 80px;
+    }
+    .firstSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .leftSection h1 {
+      font-size: 2.5rem;
+    }
+    .leftSection h2 {
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+    .leftSection h3 {
+      font-size: 2.5rem;
+      color: blueviolet;
+      margin-top: 10px;
+    }
+    .rightSection img {
+      width: 300px;
+      border-radius: 10px;
+    }
+    hr {
+      border: 0;
+      height: 1.2px;
+      background: #9c97f1;
+      margin: 40px 0;
+    }
+    h1.section-title {
+      margin-bottom: 20px;
+      color: #9c97f1;
+      font-size: 2rem;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .skills-grid, .certs-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skills-grid span, .certs-grid span {
+      background: #1a1a40;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #12123e;
+      margin-top: 40px;
+    }
+    .resume-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #9c97f1;
+      border: none;
+      border-radius: 20px;
+      color: black;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .firstSection {
+        flex-direction: column;
+        text-align: center;
+      }
+      .rightSection img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="left">Nidhi's Portfolio</div>
+    <div class="right">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section firstSection">
+    <div class="leftSection">
+      <h1>Hi, I'm <span class="purple">Nidhi Mamodiya</span></h1>
+      <h2>I am a passionate</h2>
+      <h3><span id="element"></span></h3>
+      <a class="resume-btn" href="Nidhi Resume__.pdf" download>Download Resume</a>
+    </div>
+    <div class="rightSection">
+      <img src="bg.png" alt="Profile Image">
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="section" id="about">
+    <h1 class="section-title">About Me</h1>
+    <p>Enthusiastic and detail-oriented fresher aspiring to start a career as a Frontend Developer. Eager to apply strong adaptability, active listening, decision-making, and problem-solving skills to build user-friendly and responsive web interfaces.</p>
+  </section>
+
+  <section class="section" id="skills">
+    <h1 class="section-title">Technical Skills</h1>
+    <div class="skills-grid">
+      <span>C++</span>
+      <span>Java</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>MySQL</span>
+      <span>Operating System</span>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h1 class="section-title">Projects</h1>
+    <ul>
+      <li><strong>Crime Rate Prediction Website:</strong> Designed a responsive frontend using HTML, CSS, and JS for user-friendly layout and data input.</li>
+      <li><strong>A To Z Store:</strong> Developed the frontend of an e-commerce site using HTML and CSS for product browsing and interaction.</li>
+      <li><strong>Portfolio website:</strong>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript in a responsive and interactive format.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="experience">
+    <h1 class="section-title">Experience</h1>
+    <ul>
+      <li>Blockchain Certification | Chandigarh University (June 2023)</li>
+      <li>Web Development Training | Chandigarh University (June 2024)</li>
+    </ul>
+  </section>
+
+  <section class="section" id="education">
+    <h1 class="section-title">Education</h1>
+    <ul>
+      <li><strong>B.E. CSE</strong> - Chandigarh University, Gharuan (2022–2026) | CGPA: 6.4</li>
+      <li><strong>12th (CBSE)</strong> - Dr.M.K.K Arya Model School, Panipat | 75%</li>
+      <li><strong>10th (CBSE)</strong> - Dr.M.K.K Arya Model School, Panipat | 83.6%</li>
+    </ul>
+  </section>
+
+  <section class="section" id="certifications">
+    <h1 class="section-title">Certifications</h1>
+    <div class="certs-grid">
+      <span>Blockchain</span>
+      <span>NPTEL – COA</span>
+      <span>React JS – Coursera</span>
+      <span>5G Network – Coursera</span>
+      <span>JavaScript – Infosys</span>
+      <span>IoT – NPTEL</span>
+      <span>Cloud, IoT, Edge ML – NPTEL Elite</span>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h1 class="section-title">Contact</h1>
+    <p>Email: <a href="mailto:nidhi09.mamodiya@gmail.com" style="color:#9c97f1;">nidhi09.mamodiya@gmail.com</a></p>
+    <p>Phone: 8950630599</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/nidhi-mamodiya-1645a2249/" style="color:#9c97f1;" target="_blank">nidhi-mamodiya</a></p>
+  </section>
+
+  <footer>
+    © 2025 Nidhi Mamodiya | All rights reserved
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Frontend Developer', 'Creative Coder', 'Web Enthusiast'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+</html>
